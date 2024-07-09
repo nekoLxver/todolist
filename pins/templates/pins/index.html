@@ -1,0 +1,39 @@
+{% extends 'pins/base.html' %}
+
+    {% block heading_btn %}
+
+    <h1 class="main-heading"> Create your pins </h1>
+
+    {% endblock heading_btn %}
+
+    {% block main-form %}
+
+    <form action="{% url 'pins:index' %}" method="post">
+
+    {% endblock main-form %}
+
+    {% block form_btn %}
+
+    <button class="form-btn" type="submit">Create</button>
+
+    {% endblock form_btn %}
+
+    {% block content %}
+
+    <div class="all-pins">
+
+    {% for obj in objs %}
+
+        <div class="pin">
+            <h1> {{ obj.author }} </h1>
+            <p> {{ obj.text }} </p>
+            <h2> {{ obj.date }} </h2>
+            <button class="change"><a class="btn-link" href="{% url 'pins:change' obj.id %}">Изменить</a></button>
+            <button class="delete"><a class="btn-link" href="{% url 'pins:delete' obj.id %}">Удалить</a></button>
+        </div>
+
+    {% endfor %}
+
+    </div>
+
+    {% endblock content %}

@@ -1,0 +1,93 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.all-pins {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pin {
+    margin-top: 20px;
+    padding: 25px;
+    border: 2px black solid;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px indianred;
+}
+
+.main-heading {
+    font-size: 50px;
+    margin: 0 38%;
+    width: 1000px;
+    margin-top: 25px;
+}
+
+body {
+    background-color: #f5ecece5;
+}
+
+form {
+    margin: 0 45%;
+    margin-top: 20px;
+}
+
+.form-btn {
+    margin-top: 10px;
+    width: 84%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: #369753c2;
+    color: aliceblue;
+    border: 1px black solid;
+}
+
+.change {
+    background-color: rgba(45, 45, 117, 0.767);
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.delete {
+    background-color: rgba(117, 45, 67, 0.781);
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.form-btn-cancel {
+    margin-top: 10px;
+    background-color: rgba(117, 45, 67, 0.781);
+    border: 1px black solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 84%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+button {
+    transition: 0.5;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+input {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+}

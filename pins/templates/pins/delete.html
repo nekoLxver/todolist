@@ -1,0 +1,19 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'pins/index.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="main-heading"> Are you really sure? </h1>
+    <form action="{% url 'pins:delete' id %}" method="post">
+        {% csrf_token %}
+        <button class="form-btn" type="submit">Delete</button>
+        <button class="form-btn-cancel"><a class="btn-link" href="{% url 'pins:index' %}">No</a></button>
+    </form>
+</body>
+</html>

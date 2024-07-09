@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'pins/index.css' %}">
+    <title>Pins</title>
+</head>
+<body>
+
+    {% block heading_btn %}
+
+    {% endblock heading_btn %}
+
+    {% block main-form %}
+
+    {% endblock main-form %}
+
+        {% csrf_token %}
+        <input type="text" name="text" placeholder="Text...">
+        <input type="text" name="author" placeholder="Author...">
+        {% block form_btn %}
+
+        {% endblock form_btn %}
+    </form>
+
+    {% block content %}
+
+    {% endblock content %}
+</body>
+</html>

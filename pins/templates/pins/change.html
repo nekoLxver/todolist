@@ -1,0 +1,19 @@
+{% extends 'pins/base.html' %}
+
+    {% block heading_btn %}
+
+    <h1 class="main-heading"> Change your pin </h1>
+
+    {% endblock heading_btn %}
+
+    {% block main-form %}
+
+    <form action="{% url 'pins:change' id %}" method="post">
+
+    {% endblock main-form %}
+
+    {% block form_btn %}
+
+    <button class="form-btn" type="submit">Change</button>
+
+    {% endblock form_btn %}
