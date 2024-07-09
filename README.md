@@ -1,1 +1,1 @@
-* Simple to-do list on Django *
+# Simple to-do list on Django #
